@@ -1,12 +1,54 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="res/main-style.css" type="text/css"></link>
-  <script src="res/scripts/mainscript.js" type="text/js"></script>
+<meta charset="utf-8">
+<!--meta http-equiv="refresh" content="10" onscroll=scroller()-->
+<title>My Portfolio</title>
+<link rel="stylesheet" href="./main.css"></link>
+<script src="./main.js">
+</script>
 </head>
-<body>
-Coming soon. The page for supratikchatterjee16.
+<body onload=setProperties("leftappright")>
+<header>
+<name>Supratik Chatterjee</name>
+<headermenu>
+<button>Home</button>
+<button>About</button>
+<button>Projects</button>
+<button>Places</button>
+<button>Contact</button>
+</headermenu>
+</header>
+<leftpane>
+</leftpane>
+<rightpane>
+</rightpane>
+<app onscroll=scrollAnimator()>
+<section >Section 1</section>
+<section >Section 2</section>
+<section >
+<subsection>
+MuSeNBaC
+</subsection>
+<subsection>
+
+</subsection>
+<subsection>
+</subsection>
+</section>
+<section >
+<subsection>
+</subsection>
+<subsection>
+</subsection>
+<subsection>
+</subsection>
+<subsection>
+</subsection>
+</section>
+<section >Section 5</section>
+<scroller></scroller>
+<scroller onscroll=enableParallaxOn("scroller",2)></scroller>
+</app>
 </body>
 </html>
