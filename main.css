@@ -1,3 +1,12 @@
+@font-face{
+	font-family:font1;
+	src:url("./fonts/black_jack.ttf");
+}
+@font-face{
+	font-family:font2;
+	src:url("./fonts/Comfortaa-Light.ttf");
+}
+
 body{
 	position:fixed;
 	width:100vw;
@@ -15,7 +24,7 @@ header{
 	width:100vw;
 	height:10vh;
 	display:block;
-	background:rgba(0,0,0,1);
+	background:linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0.3),rgba(0,0,0,0.8));
 	visibility:visible;
 	color:white;
 	transition:inherit;
@@ -23,10 +32,24 @@ header{
 }
 name{
 	position:absolute;
+	font-family:font2;
+	font-size:24pt;
 	bottom:2vh;
 	left:10pt;
 	color:white;
+	transition:all 1s;
 }
+nameblock{
+	font-family:inherit;
+	display:inline-block;
+	width:17pt;
+	overflow:hidden;
+	transition:all 1s;
+	pointer-events:none;
+}/*
+nameblock:hover{
+	width:140pt;
+}*/
 headermenu{
 	position:absolute;
 	right:0;
@@ -34,7 +57,7 @@ headermenu{
 	transition:inherit;
 }
 headermenu button{
-	background:rgba(0,0,0,1);
+	background:rgba(0,0,0,0);
 	border:none;
 	color:white;
 	width:60pt;
@@ -82,7 +105,7 @@ rightpane{
 
 app{
 	position:fixed;
-	top:10vh;
+	top:0vh;
 	left:0vw;
 	right:0vw;
 	bottom:0;
@@ -90,7 +113,6 @@ app{
 	overflow-y:scroll;
 	transition:inherit;
 }
-
 scroller{
 	position:relative;
 	height:1000%;
@@ -98,16 +120,39 @@ scroller{
 	display:block;
 	background:rgba(50, 50, 50, 0);
 	transition:inherit;
+	pointer-events:scroll;
 }
-
 section{
 	position:fixed;
-	height:90vh;
+	height:100vh;
 	display:block;
-	width:100%;
+	width:auto;
 	background:rgba(150,150,150,0);
-	transition:all inherit;
-	border:solid thin red;
+	transition:all 1s;
 	z-index:0;
 }
-subsection{}
+section video{
+	object-fit:fill;
+}
+section subsection{
+	position:relative;
+	display:inline-block;
+	visibility:visible;
+	width:70%;
+	height:100%;
+	float:left;
+}
+article{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	max-width:100%;
+	vertical-align:center;
+	text-align:center;
+	color:white;
+	overflow:hidden;
+	background:rgba(0, 0, 0, 0.5);
+	overflow-y:hidden;
+}

@@ -13,6 +13,17 @@ function enableRightpane(){
 	rightpane.style.right = 0;
 }
 
+function name_collapse(){
+	var elems = document.getElementsByTagName("nameblock");
+	for(var i =0;i<elems.length;i++)
+		elems[i].style.width="17pt";
+}
+
+function name_expand(){
+	var elems = document.getElementsByTagName("nameblock");
+		elems[0].style.width="110pt";
+		elems[1].style.width="140pt";
+}
 
 function closeLeftpane(){
 	var element = document.getElementsByTagName("leftpane")[0];
@@ -47,7 +58,7 @@ function scrollElement(pos){
 	for(var i = 0;i<arr.length;i++){
 		if(i==pos){
 			arr[i].style.opacity= "1";
-			arr[i].style.top="10vh";
+			arr[i].style.top="0vh";
 			arr[i].style.width = "100%";
 		}
 		else{
@@ -64,6 +75,11 @@ function setProperties(str){
 	closeLeftpane();
 	closeRightpane();
 	scrollElement(0);
+	var elems = document.getElementsByTagName("centered");
+	for(var i=0;i<elems;i++){
+		var height = elems[i].style.height;
+	}
+	console.log(document.getElementsByTagName("nameblock")[0]);
 }
 function init(){
 	
@@ -95,16 +111,19 @@ function scrollAnimator(){
 		scrollElement(2);
 		openLeftpane();
 		closeRightpane();
+		passScroll(2,pos-(modif*2));
 	}
 	else if(pos>(modif*3)&&pos<=(modif*4)){
 		scrollElement(3);
 		closeLeftpane();
-		openRightpane();
+		closeRightpane();
+		passScroll(3,pos-(modif*3));
 	}
 	else if(pos>(modif*4)&&pos<=(modif*5)){
 		scrollElement(4);
 		closeLeftpane();
 		closeRightpane();
+		passScroll(4,pos-(modif*4));
 	}
 	
 }
