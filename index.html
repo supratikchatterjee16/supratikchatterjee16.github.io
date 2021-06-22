@@ -39,7 +39,7 @@
 <!-- <script src="./main.js"></script>-->
 <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="stylesheet" href="styles/bootstrap-4.3.1.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/bootstrap-4.3.1.min.css">
 </head>
 <body>
 	<div class="col" id="full-page">
@@ -63,7 +63,7 @@
 			</div>
 		</nav>
 		<div class="row justify-content-center align-items-center" style="height:100vh;">
-			<div style="position:absolute;z-index:2;text-align:center;font-family:josefin">
+			<div style="position:absolute;z-index:2;text-align:center;font-family:josefin; color:white">
 				<h2>A Computer Science graduate interested in Robotics and Evolutionary Algorithms</h2>
 				<h4>A researcher by nature and a developer by profession.</h4>
 			</div>
@@ -71,24 +71,27 @@
 		</div>
 		<div class="row justify-content-center align-items-center bg-light" style="height:100vh;" id="about">
 			<div style="position:absolute;z-index:2;text-align:center;font-family:josefin">
-				<div class="row align-items-center" width="50%">
-					<div class="col-sm-5">
-						<img src="pics/profile_pic.jpg" alt="Supratik Chatterjee" height="200" width="200"/>
+				<div class="row align-items-middle justify-content-center" width="50%">
+					<div class="col-sm-3" style="text-align:left">
+						<h1><u>About Me</u></h1>
+						<img src="pics/profile_pic.jpg" alt="Supratik Chatterjee" height="200" width="200"/><br><br>
+						<p>I am curious about everything in general. Complicated problems that require an innovative approach are the kind of problems I like to solve the most. Few of the topics I have worked on and know about are listed here.</p>
+						<p>I hail from Kolkata. I was born in Jamshedpur, completed my college from Chennai. Currently based out of Bangalore.</p>
 					</div>
-					<div class="col-sm-7" style="text-align:left; width:30%">
-						I am curious about everything in general. Complicated problems that require an innovative approach are the kind of problems I like to solve the most. Few of the topics I have worked on and know about are :
+					<div class="col-sm-7" style="text-align:left;">
+
 						<ol class="list-group">
-							<li class="list-group-item">Linux<br>Bash scripting</li>
-							<li class="list-group-item">CI/CD tools & collaboration softwares<br>Git, Docker, Atlassian Suite</li>
 							<li class="list-group-item">Web Sockets & WebRTC based technologies<br>REST APIs, Streaming, VoIP</li>
 							<li class="list-group-item">Data Visualizations<br>Jupyter Lab, Dash(Python), Shiny(R), D3, ChartJS</li>
+							<li class="list-group-item">Web Scraping<br>Crawlers, SERP</li>
+							<li class="list-group-item">CI/CD tools & collaboration softwares<br>Git, Docker, Atlassian Suite</li>
+							<li class="list-group-item">ES6 based JS for front end design<br>WebGL, Custom Elements, Promises, Fetch API</li>
 							<li class="list-group-item">FP languages<br>Python and Rust</li>
 							<li class="list-group-item">OOP languages<br>C, C++, Java(Oracle and OpenJDK), Kotlin</li>
-							<li class="list-group-item">ES6 based JS for front end design<br>WebGL, Custom Elements, Promises, Fetch API</li>
-							<li class="list-group-item">Web Scraping<br>Crawlers, SERP</li>
 							<li class="list-group-item">RDBMS<br>MS SQL Server, Oracle DB, PostgreSQL, MariaDB</li>
 							<li class="list-group-item">NoSQL<br>MongoDB</li>
 							<li class="list-group-item">ERP tools(SAP ABAP, Oracle RMS and ORPOS)</li>
+							<li class="list-group-item">Linux<br>Bash scripting</li>
 							<li class="list-group-item">NLP<br>worked on the topic of NER</li>
 							<li class="list-group-item">CV<br>basics such as Edge Detection</li>
 						</ol>
@@ -96,12 +99,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="row bg-dark" style="height:100vh;" id="projects">Projects</div>
-		<div class="row bg-light" style="height:100vh;" id="contact">Contact</div>
+		<div class="row justify-content-center align-items-center bg-dark" style="height:100vh;" id="projects">
+			Documenting not complete.
+		</div>
+		<div class="row justify-content-center align-items-center bg-light" style="height:100vh;" id="contact">
+			<div class="col-sm-4">
+				<h1><u>Let's get in touch</u></h1><br><br><br>
+				<p>Mail me at <a href="mailto:supratikdevm96@gmail.com" style="color:blue !important">supratikdevm96@gmail.com</a> or find me on <a href="https://www.linkedin.com/in/supratikchatterjee/" style="color:blue !important">LinkedIn</a>.</p>
+			</div>
+		</div>
+		<div class="row justify-content-center align-items-center" style="height:10vh;" id="copyright">
+			Copyright 2021, Supratik Chatterjee. All rights reserved.
+		</div>
 	</div>
 
-<script src="scripts/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="scripts/popper-1.14.7.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="scripts/bootstrap-4.3.1.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts/jquery-3.3.1.slim.min.js"></script>
+<script src="scripts/popper-1.14.7.min.js"></script>
+<script src="scripts/bootstrap-4.3.1.min.js"></script>
 </body>
 </html>
