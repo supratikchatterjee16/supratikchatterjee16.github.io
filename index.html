@@ -2,64 +2,106 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!--meta http-equiv="refresh" content="10" onscroll=scroller()-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="black">
+<meta name="description" content="Portfolio of Supratik Chatterjee. Check to see the complete list of skills and projects.">
+<meta http-equiv="refresh" content="100" onscroll=scroller()>
 <title>Supratik Chatterjee - My Portfolio</title>
 <!-- <author>Supratik Chatterjee</author> -->
-<link rel="stylesheet" href="./main.css"></link>
-<link rel="stylesheet" href="./customizations.css"></link>
-<script src="./main.js">
-</script>
+<link rel="stylesheet" href="styles/main.css"></link>
+<link rel="stylesheet" href="styles/customizations.css"></link>
+<style>
+@font-face{
+	font-family:honeyscript-light;
+	src : url('fonts/HoneyScript-Light.ttf')
+}
+@font-face{
+	font-family:comfortaa;
+	src : url('fonts/Comfortaa-Regular.ttf')
+}
+@font-face{
+	font-family:blackjack;
+	src : url('fonts/black_jack.ttf')
+}
+@font-face{
+	font-family : monsieur;
+	src : url('fonts/MonsieurLaDoulaise-Regular.ttf');
+}
+@font-face{
+	font-family : rockmore;
+	src : url('fonts/Rockmore.ttf');
+}
+@font-face{
+	font-family : josefin;
+	src : url('fonts/JosefinSans-Regular.ttf');
+}
+</style>
+<!-- <script src="./main.js"></script>-->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="styles/bootstrap-4.3.1.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body onload=setProperties("leftappright")>
-<header>
-<name onmouseover=name_expand() onmouseout= name_collapse()>
-<nameblock>Supratik</nameblock><nameblock>Chatterjee</nameblock>
-</name>
-<headermenu>
-<button>Home</button><button>About</button><button>Projects</button><button>Places</button><button>Contact</button>
-</headermenu>
-</header>
-<leftpane>
-</leftpane>
-<rightpane>
-</rightpane>
-<app onscroll=scrollAnimator()>
-<section>
-<video src="vids/bg2.mp4" width="100%" height="100%" loop muted autoplay>
-</video>
-<article style="padding-top:180pt">
-<p style="font-size:32pt;font-family:font2;">WELCOME</p>
-<br><p style="font-family:font2;">To the homepage of awesomeness</p>
-<downarrow></downarrow>
-</article>
-</section>
-<section style="background:rgba(0, 0, 0, 1);color:white;">
-<!-- <pic style="color:white">profile.jpg</pic> -->
-</section>
-<section style="background:rgba(50, 50, 50, 0);overflow-x:scroll;">
-<subsection style="background:rgba(50, 150, 230, 0.2);">
-Subsection 1
-</subsection>
-<subsection style="background:red;">
-Subsection 2
-</subsection>
-<subsection>
+<body>
+	<div class="col" id="full-page">
+		<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+			<div class="container" style="z-index:10;">
+				<a class="navbar-brand" href="https://supratikchatterjee16.github.io">
+					<div class="brand-parent" style="white-space:nowrap; color:white; font-family : rockmore; font-size: 24pt;">
+						<div class="brand-child" style="display:inline-block;">Supratik</div>
+						<div class="brand-child" style="display:inline-block;">Chatterjee</div>
+					</div>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="navigate"><span class="fa fa-bars"></span></button>
+				<div class="collapse navbar-collapse" id="navbarNav" data-hover="dropdown">
+					<ul class="nav navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+						<li class="nav-item"><a class="nav-link" href="https://github.com/supratikchatterjee16">GitHub</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="row justify-content-center align-items-center" style="height:100vh;">
+			<div style="position:absolute;z-index:2;text-align:center;font-family:josefin">
+				<h2>A Computer Science graduate interested in Robotics and Evolutionary Algorithms</h2>
+				<h4>A researcher by nature and a developer by profession.</h4>
+			</div>
+			<video src="vids/bg2.mp4" loop muted autoplay style="width:100vw; height:100vh; display:block; object-fit:fill; position:absolute; z-index:1;"/>
+		</div>
+		<div class="row justify-content-center align-items-center bg-light" style="height:100vh;" id="about">
+			<div style="position:absolute;z-index:2;text-align:center;font-family:josefin">
+				<div class="row align-items-center" width="50%">
+					<div class="col-sm-5">
+						<img src="pics/profile_pic.jpg" alt="Supratik Chatterjee" height="200" width="200"/>
+					</div>
+					<div class="col-sm-7" style="text-align:left; width:30%">
+						I am curious about everything in general. Complicated problems that require an innovative approach are the kind of problems I like to solve the most. Few of the topics I have worked on and know about are :
+						<ol class="list-group">
+							<li class="list-group-item">Linux<br>Bash scripting</li>
+							<li class="list-group-item">CI/CD tools & collaboration softwares<br>Git, Docker, Atlassian Suite</li>
+							<li class="list-group-item">Web Sockets & WebRTC based technologies<br>REST APIs, Streaming, VoIP</li>
+							<li class="list-group-item">Data Visualizations<br>Jupyter Lab, Dash(Python), Shiny(R), D3, ChartJS</li>
+							<li class="list-group-item">FP languages<br>Python and Rust</li>
+							<li class="list-group-item">OOP languages<br>C, C++, Java(Oracle and OpenJDK), Kotlin</li>
+							<li class="list-group-item">ES6 based JS for front end design<br>WebGL, Custom Elements, Promises, Fetch API</li>
+							<li class="list-group-item">Web Scraping<br>Crawlers, SERP</li>
+							<li class="list-group-item">RDBMS<br>MS SQL Server, Oracle DB, PostgreSQL, MariaDB</li>
+							<li class="list-group-item">NoSQL<br>MongoDB</li>
+							<li class="list-group-item">ERP tools(SAP ABAP, Oracle RMS and ORPOS)</li>
+							<li class="list-group-item">NLP<br>worked on the topic of NER</li>
+							<li class="list-group-item">CV<br>basics such as Edge Detection</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row bg-dark" style="height:100vh;" id="projects">Projects</div>
+		<div class="row bg-light" style="height:100vh;" id="contact">Contact</div>
+	</div>
 
-</subsection>
-</section>
-<section >
-<subsection>
-</subsection>
-<subsection>
-</subsection>
-<subsection>
-</subsection>
-<subsection>
-</subsection>
-</section>
-<section >Section 5</section>
-<scroller></scroller>
-<scroller onscroll=enableParallaxOn("scroller",2)></scroller>
-</app>
+<script src="scripts/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="scripts/popper-1.14.7.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="scripts/bootstrap-4.3.1.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

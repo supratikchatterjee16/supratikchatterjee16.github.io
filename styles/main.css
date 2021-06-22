@@ -1,0 +1,20 @@
+@keyframes shift-bg{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.bg-gradient-animated{
+	/* background: linear-gradient(-45deg, #feac5e, #c779d0, #4bc0c8); */
+	background: linear-gradient(315deg, #7f53ac, #647dee);
+	background-size : 400% 400%;
+	animation : shift-bg 30s ease infinite alternate;
+}
+
+.bg-transparent{background:rgba(0, 0, 0, 0);}
+a{color:white !important;}
