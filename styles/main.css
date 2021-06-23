@@ -18,3 +18,5 @@
 
 .bg-transparent{background:rgba(0, 0, 0, 0);}
 a{color:white !important;}
+
+.bg-transparent *{background:rgba(0, 0, 0, 0);2}

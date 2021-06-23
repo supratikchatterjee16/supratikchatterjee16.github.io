@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="black">
 <meta name="description" content="Portfolio of Supratik Chatterjee. Check to see the complete list of skills and projects.">
-<meta http-equiv="refresh" content="100" onscroll=scroller()>
+<!-- <meta http-equiv="refresh" content="100" onscroll=scroller()> -->
 <title>Supratik Chatterjee - My Portfolio</title>
 <!-- <author>Supratik Chatterjee</author> -->
 <link rel="stylesheet" href="styles/main.css"></link>
@@ -57,7 +57,7 @@
 					<ul class="nav navbar-nav ml-auto">
 						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 						<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-						<li class="nav-item"><a class="nav-link" href="https://github.com/supratikchatterjee16">GitHub</a></li>
+						<li class="nav-item"><a class="nav-link" href="https://github.com/supratikchatterjee16" target="_blank" rel="noopener noreferrer">GitHub</a></li>
 						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -71,37 +71,52 @@
 			<video src="vids/bg2.mp4" loop muted autoplay style="width:100vw; height:100vh; display:block; object-fit:fill; position:absolute; z-index:1;"/>
 		</div>
 		<div class="row justify-content-center align-items-center bg-light" style="min-height:100vh;font-family:josefin" id="about">
-				<div class="col-sm-3" style="text-align:left">
-						<h1><u>About Me</u></h1>
+				<div class="col-sm-4" style="text-align:left">
+						<h1 style="margin-bottom:30pt;"><u>About Me</u></h1>
 						<img src="pics/profile_pic.jpg" alt="Supratik Chatterjee" height="200" width="200"/><br><br>
 						<p>I am curious about everything in general. Complicated problems that require an innovative approach are the kind of problems I like to solve the most. Few of the topics I have worked on and know about are listed here.</p>
 						<p>I hail from Kolkata. I was born in Jamshedpur, completed my college from Chennai. Currently based out of Bangalore.</p>
 					</div>
-					<div class="col-sm-7" style="text-align:left;">
-						<ol class="list-group">
-							<li class="list-group-item">Web Sockets & WebRTC based technologies<br>REST APIs, Streaming, VoIP</li>
-							<li class="list-group-item">Data Visualizations<br>Jupyter Lab, Dash(Python), Shiny(R), D3, ChartJS</li>
-							<li class="list-group-item">Web Scraping<br>Crawlers, SERP</li>
-							<li class="list-group-item">CI/CD tools & collaboration softwares<br>Git, Docker, Atlassian Suite</li>
-							<li class="list-group-item">ES6 based JS for front end design<br>WebGL, Custom Elements, Promises, Fetch API</li>
-							<li class="list-group-item">FP languages<br>Python and Rust</li>
-							<li class="list-group-item">OOP languages<br>C, C++, Java(Oracle and OpenJDK), Kotlin</li>
-							<li class="list-group-item">RDBMS<br>MS SQL Server, Oracle DB, PostgreSQL, MariaDB</li>
-							<li class="list-group-item">NoSQL<br>MongoDB</li>
-							<li class="list-group-item">ERP tools(SAP ABAP, Oracle RMS and ORPOS)</li>
-							<li class="list-group-item">Linux<br>Bash scripting</li>
-							<li class="list-group-item">NLP<br>worked on the topic of NER</li>
-							<li class="list-group-item">CV<br>basics such as Edge Detection</li>
+					<div class="col-sm-4" style="text-align:left;">
+						<ol class="list-group list-group-flush list-group-numbered bg-transparent">
+							<li class="list-group-item bg-transparent">Web Sockets & WebRTC based technologies<br>REST APIs, Streaming, VoIP</li>
+							<li class="list-group-item bg-transparent">Data Visualizations<br>Jupyter Lab, Dash(Python), Shiny(R), D3, ChartJS</li>
+							<li class="list-group-item bg-transparent">Web Scraping<br>Crawlers, SERP</li>
+							<li class="list-group-item bg-transparent">CI/CD tools & collaboration softwares<br>Git, Docker, Atlassian Suite</li>
+							<li class="list-group-item bg-transparent">ES6 based JS for front end design<br>WebGL, Custom Elements, Promises, Fetch API</li>
+							<li class="list-group-item bg-transparent">FP languages<br>Python and Rust</li>
+							<li class="list-group-item bg-transparent">OOP languages<br>C, C++, Java(Oracle and OpenJDK), Kotlin</li>
+							<li class="list-group-item bg-transparent">RDBMS<br>MS SQL Server, Oracle DB, PostgreSQL, MariaDB</li>
+							<li class="list-group-item bg-transparent">NoSQL<br>MongoDB</li>
+							<li class="list-group-item bg-transparent">ERP tools(SAP ABAP, Oracle RMS and ORPOS)</li>
+							<li class="list-group-item bg-transparent">Linux<br>Bash scripting</li>
+							<li class="list-group-item bg-transparent">NLP<br>worked on the topic of NER</li>
+							<li class="list-group-item bg-transparent">CV<br>basics such as Edge Detection</li>
 						</ol>
 					</div>
 		</div>
 		<div class="row justify-content-center align-items-center bg-dark" style="height:100vh;" id="projects">
-			Documenting not complete.
+			<div class="card m-2" style="width: 18rem;">
+				<img src="pics/nastyui.png" class="card-img-top" alt="UI for NASTY">
+				<div class="card-body">
+					<h5 class="card-title">News Analysis</h5>
+					<p class="card-text"><b>What if we could get the sequence of events that have been reported in the news for any current incident or for any entity ever mentioned in news?</b><br><br> This personal project of mine hopes to be able to deliver on this. To know what makes it interesting, read the full text.</p>
+					<a href="news_analysis.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Go to project page</a>
+				</div>
+			</div>
+			<div class="card m-2" style="width: 18rem;">
+				<!-- <img src="pics/nastyui.png" class="card-img-top" alt="UI for NASTY"> -->
+				<div class="card-body">
+					<h5 class="card-title">Horus</h5>
+					<p class="card-text"> Utilizing a TURN server setup using <a href="https://github.com/coturn/coturn" target="_blank" rel="noopener noreferrer" style="color:blue !important">COTURN</a>, and using Google STUN servers to utilize WebRTC for information retrieval and control of drones. This is a concept, for which a POC is under development. It is currently a general computer to computer interaction. <br><br>This is to be replicated through a Development Board(Arduino Flora or AdaFruit) to be able to work with a drone controller(Flight Controller, Motor Drivers, etc.)<br><br>The reason for attempting such a thing, is to be able to operate wherever there is a good mobile network(GPRS).</p>
+					<!-- <a href="" class="btn btn-primary" >Go to project page</a> -->
+				</div>
+			</div>
 		</div>
 		<div class="row justify-content-center align-items-center bg-light" style="height:100vh;" id="contact">
 			<div class="col-sm-4">
 				<h1><u>Let's get in touch</u></h1><br><br><br>
-				<p>Mail me at <a href="mailto:supratikdevm96@gmail.com" style="color:blue !important">supratikdevm96@gmail.com</a> or find me on <a href="https://www.linkedin.com/in/supratikchatterjee/" style="color:blue !important">LinkedIn</a>.</p>
+				<p>Mail me at <a href="mailto:supratikdevm96@gmail.com" style="color:blue !important">supratikdevm96@gmail.com</a> or find me on <a href="https://www.linkedin.com/in/supratikchatterjee/" style="color:blue !important" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
 			</div>
 		</div>
 		<div class="row justify-content-center align-items-center" style="height:10vh;" id="copyright">
