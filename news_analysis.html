@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="black">
+<meta name="description" content="Portfolio website for Supratik Chatterjee. Check to see a list of his skills and projects.">
+<!-- <meta http-equiv="refresh" content="100" onscroll=scroller()> -->
+<title>News Analysis</title>
+<!-- <author>Supratik Chatterjee</author> -->
+<link rel="stylesheet" href="styles/main.css"></link>
+<link rel="stylesheet" href="styles/customizations.css"></link>
+<style>
+@font-face{
+	font-family:honeyscript-light;
+	src : url('fonts/HoneyScript-Light.ttf')
+}
+@font-face{
+	font-family:comfortaa;
+	src : url('fonts/Comfortaa-Regular.ttf')
+}
+@font-face{
+	font-family:blackjack;
+	src : url('fonts/black_jack.ttf')
+}
+@font-face{
+	font-family : monsieur;
+	src : url('fonts/MonsieurLaDoulaise-Regular.ttf');
+}
+@font-face{
+	font-family : rockmore;
+	src : url('fonts/Rockmore.ttf');
+}
+@font-face{
+	font-family : josefin;
+	src : url('fonts/JosefinSans-Regular.ttf');
+}
+</style>
+<!-- <script src="./main.js"></script>-->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="styles/bootstrap-4.3.1.min.css">
+<script src="scripts/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="py-5">News Analysis</h1>
+		<b>What if we could get the sequence of events that have been reported in the news for any current incident or for any entity ever mentioned in news?</b><br><br><br>
+		<section>
+			This was a question that occured to me about back in 2019. I decided to create a prototype for the same, as at that time, there were no other work related to it. These prototypes that I created, were called <a href="https://github.com/supratikchatterjee16/nasty" style="color:black !important; font-weight:700;" target="_blank" rel="noopener noreferrer">NASTY</a> and <a href="https://github.com/supratikchatterjee16/nastyui" style="color:black !important; font-weight:700;" target="_blank" rel="noopener noreferrer">NASTY UI</a>.
+		</section>
+		<section>
+			While working on it there was a paper I released an Academic Paper titled, <a href="http://ijrar.org/papers/IJRAR19J3809.pdf" style="color:black !important; font-weight:700;" target="_blank" rel="noopener noreferrer">Entity Analysis and Centralization</a>.
+		</section>
+		<section>
+			Currently, the same has been broken into several segments to make every component robust. Why was it necessary? The prototype that was created was a one shot prototype. If you run it, there is no way to stop it and if it has errors, you need to re-run it again. It was made to not fetch URLs that had been already travelled or fetched within a time-duration. Apart from this there were several other problems. For example Stanford Core NLP, which makes use of Statistics based NLP, which in our scenario caused a lot of problems.
+		</section>
+		<section>
+			What is being done about it now? The following is a list of current components being worked upon :
+			<ol class="list-group list-group-flush list-group-numbered bg-transparent">
+				<li class="list-group-item bg-transparent">serp_bot<br>Python library required for modifying User Agent strings for a layer of bot detection prevention</li>
+				<li class="list-group-item bg-transparent">project-nlp<br>Program written in Rust to analyze words to perform General Grammatical analysis of words.</li>
+				<li class="list-group-item bg-transparent">news_raker<br>Crawlers for RSS feed and HTML page scraping. This is responsible for storing the extracted passages.</li>
+				<!-- <li class="list-group-item bg-transparent">CI/CD tools & collaboration softwares<br>Git, Docker, Atlassian Suite</li>
+				<li class="list-group-item bg-transparent">ES6 based JS for front end design<br>WebGL, Custom Elements, Promises, Fetch API</li>
+				<li class="list-group-item bg-transparent">FP languages<br>Python and Rust</li>
+				<li class="list-group-item bg-transparent">OOP languages<br>C, C++, Java(Oracle and OpenJDK), Kotlin</li>
+				<li class="list-group-item bg-transparent">RDBMS<br>MS SQL Server, Oracle DB, PostgreSQL, MariaDB</li>
+				<li class="list-group-item bg-transparent">NoSQL<br>MongoDB</li>
+				<li class="list-group-item bg-transparent">ERP tools(SAP ABAP, Oracle RMS and ORPOS)</li>
+				<li class="list-group-item bg-transparent">Linux<br>Bash scripting</li>
+				<li class="list-group-item bg-transparent">NLP<br>worked on the topic of NER</li>
+				<li class="list-group-item bg-transparent">CV<br>basics such as Edge Detection</li> -->
+			</ol>
+		</section>
+		<section>
+			These components together provide a much better process for performing the same, while allowing us to make changes to further improve and optimize the components for this.
+		</section>
+		<div class="row justify-content-center align-items-center" style="height:1vh;" id="copyright">
+			Copyright 2021, Supratik Chatterjee. All rights reserved.
+		</div>
+	</div>
+
+
+	<a href="https://github.com/supratikchatterjee16/news_raker">News Raker</a>
+	<script src="scripts/jquery-3.3.1.slim.min.js"></script>
+	<script src="scripts/popper-1.14.7.min.js"></script>
+	<script src="scripts/bootstrap-4.3.1.min.js"></script>
+</body>
+</html>
