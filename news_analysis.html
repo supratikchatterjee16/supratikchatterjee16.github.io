@@ -43,14 +43,14 @@
 <script src="scripts/main.js"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="min-height:120vh;">
 		<h1 class="py-5">News Analysis</h1>
 		<b>What if we could get the sequence of events that have been reported in the news for any current incident or for any entity ever mentioned in news?</b><br><br><br>
 		<section>
-			This was a question that occured to me about back in 2019. I decided to create a prototype for the same, as at that time, there were no other work related to it. These prototypes that I created, were called <a href="https://github.com/supratikchatterjee16/nasty" style="color:black !important; font-weight:700;" target="_blank" rel="noopener noreferrer">NASTY</a> and <a href="https://github.com/supratikchatterjee16/nastyui" style="color:black !important; font-weight:700;" target="_blank" rel="noopener noreferrer">NASTY UI</a>.
+			This was a question that occured to me about back in 2019. I decided to create a prototype for the same, as at that time, there were no other work related to it. These prototypes that I created, were called <a href="https://github.com/supratikchatterjee16/nasty" style="color:blue !important; font-weight:700;" target="_blank" rel="noopener noreferrer">NASTY</a>(for News Analysis and Summarization Tool) and <a href="https://github.com/supratikchatterjee16/nastyui" style="color:blue !important; font-weight:700;" target="_blank" rel="noopener noreferrer">NASTY UI</a>.
 		</section>
 		<section>
-			While working on it there was a paper I released an Academic Paper titled, <a href="http://ijrar.org/papers/IJRAR19J3809.pdf" style="color:black !important; font-weight:700;" target="_blank" rel="noopener noreferrer">Entity Analysis and Centralization</a>.
+			While working on it there was a paper I released an Academic Paper titled, <a href="http://ijrar.org/papers/IJRAR19J3809.pdf" style="color:blue !important; font-weight:700;" target="_blank" rel="noopener noreferrer">Entity Analysis and Centralization</a>.
 		</section>
 		<section>
 			Currently, the same has been broken into several segments to make every component robust. Why was it necessary? The prototype that was created was a one shot prototype. If you run it, there is no way to stop it and if it has errors, you need to re-run it again. It was made to not fetch URLs that had been already travelled or fetched within a time-duration. Apart from this there were several other problems. For example Stanford Core NLP, which makes use of Statistics based NLP, which in our scenario caused a lot of problems.
@@ -74,9 +74,9 @@
 			</ol>
 		</section>
 		<section>
-			These components together provide a much better process for performing the same, while allowing us to make changes to further improve and optimize the components for this.
+			These components together provide a much better process for performing the same, while allowing us to make changes to further improve and optimize the components for this. Furthermore, previously the RDBMS system was underutilized, currently it is BCNF compliant.
 		</section>
-		<div class="row justify-content-center align-items-center" style="height:1vh;" id="copyright">
+		<div class="row justify-content-center align-items-center" style="height:1vh;bottom:0;" id="copyright">
 			Copyright 2021, Supratik Chatterjee. All rights reserved.
 		</div>
 	</div>

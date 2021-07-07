@@ -13,7 +13,12 @@ document.addEventListener('scroll', (e) => {
 	// define commons here.
 	let viewportHeight = window.innerHeight;
 	let position = document.documentElement.scrollTop || document.body.scrollTop;
-	if(position < viewportHeight)setNavbarColor(1);
+	if(position < viewportHeight - 100)setNavbarColor(1);
 	else setNavbarColor(2);
 });
 setNavbarColor(1);
+
+// (function titleMarquee() {
+//     document.title = document.title.substring(1) + document.title.substring(0,1);
+//     setTimeout(titleMarquee, 50);
+// })();
