@@ -1,9 +1,12 @@
-<!-- public/sitemap.xml -->
 <xml version="1.0" encoding="UTF-8">
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-    <loc>https://supratikchatterjee16.github.io/</loc>
-    <lastmod>2024-04-30</lastmod>
+        <loc>https://supratikchatterjee16.github.io/index.html</loc>
+        <lastmod>2025-08-27T23:16:45.000Z</lastmod>
+    </url>
+    <url>
+        <loc>https://supratikchatterjee16.github.io/academia-frontend/</loc>
+        <lastmod>2025-08-25T18:16:45.000Z</lastmod>
     </url>
 </urlset>
 </xml>
